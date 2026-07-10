@@ -1,0 +1,583 @@
+<!-- Renier natuursteen, redesign in de stijl van het Kontrek Webflow template. Alle afbeeldingen zijn echte foto's van renier.be (geen stockbeelden). -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Renier | Uw partner in Belgische natuursteen</title>
+<meta name="description" content="Renier is een Belgisch familiebedrijf, specialist in Belgische blauwe hardsteen en Vinalmont maaskalksteen uit eigen groeve. Ontginning, bewerking en levering op maat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bronze:#9c6d3f; --bronze-d:#845b34;
+  --ink:#12161b; --ink2:#191f26; --ink3:#212831;
+  --cream:#e9e3d6; --cream2:#f2eee5;
+  --stone:#595959; --stone-l:#8a8a8a; --line:#e4e0d7; --line-d:#2a323b;
+  --white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Inter Tight",sans-serif;color:var(--stone);background:var(--white);font-size:16px;line-height:1.62;letter-spacing:.01em;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4,.bebas{font-family:"Bebas Neue",sans-serif;font-weight:400;color:var(--ink);letter-spacing:.02em;line-height:1.06}
+.wrap{max-width:1240px;margin:0 auto;padding:0 40px}
+section{position:relative}
+.eyebrow{font-family:"Bebas Neue",sans-serif;font-size:15px;letter-spacing:.22em;color:var(--bronze);display:inline-flex;align-items:center;gap:14px;text-transform:uppercase}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--bronze);display:inline-block}
+.eyebrow.ctr::after{content:"";width:34px;height:1px;background:var(--bronze);display:inline-block}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--bronze);color:#fff;font-family:"Bebas Neue",sans-serif;letter-spacing:.14em;font-size:16px;padding:15px 26px;border:0;cursor:pointer;text-transform:uppercase;transition:background .25s,transform .25s}
+.btn:hover{background:var(--bronze-d);transform:translateY(-2px)}
+.btn svg{width:16px;height:16px}
+.btn.dark{background:var(--ink);color:#fff}
+.btn.dark:hover{background:#000}
+
+/* NAV */
+header.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--ink);border-bottom:1px solid var(--line-d)}
+.nav-in{max-width:1400px;margin:0 auto;padding:0 34px;height:74px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:11px;color:#fff}
+.brand .mark{width:34px;height:34px;background:var(--bronze);display:flex;align-items:center;justify-content:center}
+.brand .mark svg{width:19px;height:19px}
+.brand b{font-family:"Bebas Neue",sans-serif;font-size:26px;letter-spacing:.14em;font-weight:400}
+.menu{display:flex;gap:34px;align-items:center}
+.menu a{font-family:"Bebas Neue",sans-serif;font-size:16px;letter-spacing:.11em;color:#fff;text-transform:uppercase;opacity:.92;transition:color .2s}
+.menu a:hover{color:var(--bronze)}
+.nav-cta{display:flex;align-items:center;gap:16px}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{width:26px;height:2px;background:#fff;display:block;transition:.3s}
+
+/* HERO */
+.hero{min-height:100vh;background:linear-gradient(90deg,rgba(10,13,17,.86) 0%,rgba(10,13,17,.5) 45%,rgba(10,13,17,.72) 100%),url("https://renier.be/wp-content/uploads/2026/03/DSC_2400-1536x1017.jpg") center/cover no-repeat;padding-top:74px;position:relative;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.hero-in{max-width:1400px;margin:0 auto;padding:60px 34px 0;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.hero-lead p{color:#d9dde2;max-width:340px;font-size:17px;margin-bottom:40px}
+.scrolldot{width:120px;height:120px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;color:var(--ink)}
+.scrolldot svg{width:22px;height:22px;animation:bob 1.8s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(-4px)}50%{transform:translateY(4px)}}
+.hero-h{justify-self:end;text-align:right}
+.hero-h .mm{width:40px;height:40px;margin-left:auto;margin-bottom:12px}
+.hero-h h1{color:#fff;font-size:66px;line-height:.98}
+.hero-idx{position:absolute;left:34px;bottom:150px;display:flex;flex-direction:column;gap:6px}
+.hero-idx span{width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-family:"Bebas Neue",sans-serif;font-size:15px;color:#fff;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18)}
+.hero-idx span.on{background:var(--bronze);border-color:var(--bronze)}
+.hero-foot{position:absolute;left:0;right:0;bottom:0;pointer-events:none}
+.hero-foot .lbl{max-width:1400px;margin:0 auto;padding:0 34px;display:flex;justify-content:space-between;font-family:"Bebas Neue",sans-serif;color:#fff;letter-spacing:.2em;font-size:15px;margin-bottom:2px}
+.hero-word{font-family:"Bebas Neue",sans-serif;color:rgba(255,255,255,.14);font-size:20vw;line-height:.8;text-align:center;letter-spacing:.02em;white-space:nowrap;user-select:none}
+
+/* generic dark section */
+.dark{background:var(--ink);color:#c9ced4}
+.dark h2,.dark h3{color:#fff}
+
+/* SAFETY / kwaliteit in elke stap */
+.kw{padding:110px 0 0}
+.kw-head{text-align:center;max-width:760px;margin:0 auto}
+.kw-head h2{font-size:44px;margin-top:20px}
+.kw-dot{width:76px;height:76px;border-radius:50%;background:var(--ink3);display:flex;align-items:center;justify-content:center;margin:34px auto 0;color:#fff}
+.kw-dot svg{width:20px;height:20px}
+.kw-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:64px;border-top:1px solid var(--line-d)}
+.kw-cell{padding:52px 34px 70px;text-align:center;border-right:1px solid var(--line-d)}
+.kw-cell:last-child{border-right:0}
+.kw-cell .n{font-family:"Bebas Neue",sans-serif;font-size:18px;color:var(--stone-l);letter-spacing:.1em}
+.kw-cell h3{font-size:28px;margin:16px 0 14px}
+.kw-cell p{font-size:15px;color:#aeb4bb;max-width:300px;margin:0 auto}
+
+/* trust strip */
+.strip{display:grid;grid-template-columns:repeat(5,1fr);border-bottom:1px solid var(--line)}
+.strip .c{border-right:1px solid var(--line);padding:38px 20px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px;transition:background .3s}
+.strip .c:last-child{border-right:0}
+.strip .c.hl{background:var(--cream)}
+.strip .c b{font-family:"Bebas Neue",sans-serif;font-size:30px;color:var(--ink);letter-spacing:.03em;line-height:1}
+.strip .c span{font-family:"Bebas Neue",sans-serif;font-size:13px;letter-spacing:.14em;color:var(--stone-l)}
+
+/* strengths */
+.str{padding:100px 0}
+.str-head{text-align:center;max-width:720px;margin:0 auto}
+.str-head h2{font-size:44px;margin-top:20px}
+.str-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:66px;border-top:1px solid var(--line)}
+.str-cell{padding:52px 40px 30px;text-align:center;border-right:1px solid var(--line)}
+.str-cell:last-child{border-right:0}
+.str-ic{width:62px;height:62px;margin:0 auto 22px;color:var(--ink)}
+.str-ic svg{width:100%;height:100%}
+.str-cell h3{font-size:26px;margin-bottom:12px}
+.str-cell p{font-size:15px;max-width:280px;margin:0 auto}
+
+/* Quality standards (toepassingen) */
+.qs{padding:30px 0 110px}
+.qs-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start;margin-top:44px}
+.qs-l h2{font-size:42px;margin:18px 0 40px}
+.qs-imgwrap{position:relative}
+.qs-imgwrap img{width:100%;height:430px;object-fit:cover}
+.qs-badge{position:absolute;left:24px;bottom:-26px;background:#fff;box-shadow:0 22px 44px rgba(0,0,0,.14);padding:16px 24px;display:flex;align-items:center;gap:14px;border-radius:40px}
+.qs-badge .ic{width:40px;height:40px;border-radius:50%;background:var(--cream);display:flex;align-items:center;justify-content:center;color:var(--bronze)}
+.qs-badge .ic svg{width:20px;height:20px}
+.qs-badge b{font-family:"Bebas Neue",sans-serif;font-size:20px;color:var(--ink);letter-spacing:.04em;line-height:1}
+.qs-badge span{font-size:12.5px;color:var(--stone)}
+.qs-r>img{width:100%;height:360px;object-fit:cover;margin-bottom:14px}
+.acc .it{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 8px;border-bottom:1px solid var(--line);font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:.06em;color:var(--ink);cursor:pointer;transition:.25s}
+.acc .it .ar{width:34px;height:34px;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.acc .it.on{background:var(--ink);color:#fff;padding-left:18px;padding-right:14px;border-color:var(--ink)}
+.acc .it.on .ar{background:var(--bronze);color:#fff}
+.acc .it svg{width:15px;height:15px}
+
+/* explore + stats */
+.exp{text-align:center;padding:30px 0 0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:56px}
+.stats .s{padding:56px 20px;text-align:center;border-right:1px solid var(--line)}
+.stats .s:last-child{border-right:0}
+.stats .s b{font-family:"Bebas Neue",sans-serif;font-size:58px;color:var(--ink);line-height:.9;letter-spacing:.02em;display:block}
+.stats .s span{font-family:"Bebas Neue",sans-serif;font-size:15px;letter-spacing:.14em;color:var(--stone);margin-top:12px;display:block}
+
+/* full band */
+.band{height:560px;position:relative;background:linear-gradient(0deg,rgba(10,13,17,.5),rgba(10,13,17,.15)),url("https://renier.be/wp-content/uploads/2026/05/piedra-paloma-luxe-villa-1536x864.jpg") center/cover no-repeat;display:flex;align-items:center;justify-content:center}
+.band-pill{background:rgba(20,40,42,.82);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.18);border-radius:60px;padding:14px 14px 14px 22px;display:flex;align-items:center;gap:20px;max-width:640px;width:calc(100% - 60px)}
+.band-pill .tx b{color:#fff;font-family:"Inter Tight";font-weight:600;display:block;font-size:16px}
+.band-pill .tx span{color:#d7dde0;font-size:14.5px}
+.band-pill .go{width:52px;height:52px;border-radius:50%;background:var(--bronze);flex:0 0 auto;display:flex;align-items:center;justify-content:center;color:#fff}
+.band-pill .go svg{width:20px;height:20px}
+
+/* methods */
+.mth{padding:110px 0}
+.mth-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.mth-imgwrap{position:relative;background:var(--cream);padding:26px;clip-path:polygon(0 0,88% 0,100% 12%,100% 100%,0 100%)}
+.mth-imgwrap img{width:100%;height:520px;object-fit:cover}
+.mth-badge{position:absolute;left:26px;bottom:26px;right:26px;background:var(--ink);color:#fff;padding:26px 28px}
+.mth-badge .r{display:flex;align-items:baseline;gap:14px}
+.mth-badge b{font-family:"Bebas Neue",sans-serif;font-size:46px;color:var(--bronze);line-height:1;letter-spacing:.02em}
+.mth-badge strong{font-family:"Bebas Neue",sans-serif;font-size:18px;letter-spacing:.1em;font-weight:400}
+.mth-badge p{color:#c3c8ce;font-size:14px;margin-top:12px}
+.mth-r h2{font-size:42px;margin:16px 0 30px}
+.mth-acc .it{border-bottom:1px solid var(--line);padding:24px 4px}
+.mth-acc .it .top{display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer}
+.mth-acc .it h3{font-size:23px;letter-spacing:.05em}
+.mth-acc .it .ar{width:34px;height:34px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;transition:.25s}
+.mth-acc .it.on .ar{background:var(--bronze);color:#fff}
+.mth-acc .it .bd{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.mth-acc .it.on .bd{max-height:120px}
+.mth-acc .it .bd p{padding-top:14px;font-size:15px;max-width:420px}
+.mth-acc svg{width:15px;height:15px}
+
+/* process */
+.proc{padding:0 0 110px}
+.proc-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.proc-l{background:var(--cream);padding:64px 56px}
+.proc-l .mm{width:38px;height:38px;color:var(--ink);margin-bottom:24px}
+.proc-l h2{font-size:40px;margin-bottom:40px}
+.proc-tags{display:flex;flex-direction:column;gap:18px}
+.tag{font-family:"Bebas Neue",sans-serif;letter-spacing:.05em;font-size:19px;padding:16px 22px;color:#fff;display:flex;gap:14px;align-items:center}
+.tag .tn{color:var(--bronze)}
+.tag.t0{background:var(--ink)}
+.tag.t1{background:#8b9096;transform:rotate(-2.2deg)}
+.tag.t2{background:#b9b0a0;color:var(--ink)}
+.tag.t2 .tn{color:var(--ink)}
+.tag.t3{background:var(--ink);transform:rotate(1.4deg)}
+.proc-r{position:relative}
+.proc-r img{width:100%;height:600px;object-fit:cover}
+.proc-badge{position:absolute;left:0;bottom:44px;background:#fff;padding:22px 30px 24px;max-width:280px;box-shadow:0 24px 48px rgba(0,0,0,.16)}
+.proc-badge b{font-family:"Bebas Neue",sans-serif;font-size:40px;color:var(--bronze);line-height:1}
+.proc-badge strong{font-family:"Bebas Neue",sans-serif;font-size:16px;letter-spacing:.1em;font-weight:400;color:var(--ink);display:block;margin:4px 0 10px}
+.proc-badge p{font-size:14px}
+
+/* testimonial */
+.tst{padding:100px 0 110px;text-align:center}
+.tst .av{width:150px;height:150px;border-radius:50%;object-fit:cover;margin:0 auto 30px}
+.tst .who{font-size:16px;color:var(--stone)}
+.tst blockquote{font-family:"Bebas Neue",sans-serif;color:var(--ink);font-size:40px;line-height:1.12;max-width:900px;margin:24px auto 0;letter-spacing:.02em}
+.tst .arw{display:flex;justify-content:space-between;max-width:1180px;margin:-260px auto 0;padding:0 10px;color:#cfcfcf;pointer-events:none}
+.tst .arw svg{width:34px;height:34px}
+
+/* projects */
+.prj{background:var(--white);padding:40px 0 0;overflow:hidden}
+.prj-top{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;position:relative}
+.prj-ghost{position:absolute;right:0;top:-30px;font-family:"Bebas Neue",sans-serif;font-size:12vw;color:#f0ede6;line-height:.8;letter-spacing:.02em;z-index:0}
+.prj-l{position:relative;z-index:1}
+.prj-l h2{font-size:42px;margin:16px 0 26px}
+.prj-l p{max-width:340px;margin-bottom:30px}
+.prj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:60px;padding-bottom:90px}
+.prj-card{position:relative;overflow:hidden}
+.prj-card img{width:100%;height:440px;object-fit:cover;clip-path:polygon(0 0,100% 0,100% 88%,90% 100%,0 100%);transition:transform .6s}
+.prj-card:hover img{transform:scale(1.05)}
+.prj-card .cap{position:absolute;left:20px;bottom:26px;color:#fff;font-family:"Bebas Neue",sans-serif;font-size:22px;letter-spacing:.05em;text-shadow:0 2px 14px rgba(0,0,0,.6)}
+.prj-card .cap small{display:block;font-family:"Inter Tight";font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.85;font-weight:600}
+
+/* footer */
+footer{background:var(--ink);color:#aab0b7;position:relative;overflow:hidden}
+.foot-bg{position:absolute;inset:0;background:url("https://renier.be/wp-content/uploads/2026/03/DSC_2400-1536x1017.jpg") center/cover;opacity:.06}
+.foot-in{position:relative;z-index:1;max-width:1240px;margin:0 auto;padding:90px 40px 0}
+.foot-top{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;padding-bottom:56px;border-bottom:1px solid var(--line-d)}
+.foot-cta h2{color:#fff;font-size:38px;max-width:440px;margin-bottom:28px}
+.foot-col h4{color:#fff;font-family:"Bebas Neue",sans-serif;font-size:16px;letter-spacing:.16em;margin-bottom:26px}
+.foot-col a{display:block;font-family:"Bebas Neue",sans-serif;font-size:17px;letter-spacing:.08em;color:#c3c8ce;margin-bottom:16px;transition:color .2s}
+.foot-col a:hover{color:var(--bronze)}
+.foot-mid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;padding:48px 0}
+.foot-mid .pin{width:44px;height:44px;border-radius:50%;border:1px solid var(--bronze);display:flex;align-items:center;justify-content:center;color:var(--bronze);margin-bottom:16px}
+.foot-mid .pin svg{width:20px;height:20px}
+.foot-mid b{color:#fff;font-family:"Bebas Neue",sans-serif;letter-spacing:.1em;font-size:16px}
+.foot-mid p{font-size:15px}
+.foot-word{font-family:"Bebas Neue",sans-serif;font-size:20vw;line-height:.74;color:rgba(255,255,255,.05);letter-spacing:.02em;padding:20px 0 0;text-align:left}
+.foot-legal{position:relative;z-index:1;border-top:1px solid var(--line-d);padding:22px 0;margin-top:-4%}
+.foot-legal .in{max-width:1240px;margin:0 auto;padding:0 40px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:13px;letter-spacing:.04em;color:#8a9198;font-family:"Bebas Neue",sans-serif}
+.foot-legal a{color:var(--bronze)}
+
+/* reveal anim */
+.rv{opacity:0;transform:translateY(34px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+.clip{clip-path:inset(0 100% 0 0);transition:clip-path 1s cubic-bezier(.7,0,.2,1)}
+.clip.in{clip-path:inset(0 0 0 0)}
+
+@media(max-width:960px){
+  .wrap{padding:0 22px}
+  .menu{display:none;position:fixed;top:74px;left:0;right:0;background:var(--ink);flex-direction:column;gap:0;padding:10px 0;border-bottom:1px solid var(--line-d)}
+  .menu.open{display:flex}
+  .menu a{padding:15px 24px;width:100%}
+  .burger{display:flex}
+  .hero-in{grid-template-columns:1fr;gap:26px}
+  .hero-lead{order:2}
+  .hero-h{justify-self:start;text-align:left;order:1}
+  .hero-h .mm{margin-left:0}
+  .hero-h h1{font-size:46px}
+  .hero-idx{display:none}
+  .scrolldot{width:88px;height:88px}
+  .kw-grid,.str-grid,.stats{grid-template-columns:1fr}
+  .kw-cell,.str-cell{border-right:0;border-bottom:1px solid var(--line-d)}
+  .str-cell{border-bottom:1px solid var(--line)}
+  .stats .s{border-right:0;border-bottom:1px solid var(--line)}
+  .strip{grid-template-columns:1fr 1fr}
+  .strip .c{border-bottom:1px solid var(--line)}
+  .strip .c:nth-child(2n){border-right:0}
+  .qs-grid,.mth-grid,.proc-grid,.prj-top,.foot-top,.foot-mid{grid-template-columns:1fr;gap:44px}
+  .qs-badge{position:static;margin-top:16px;border-radius:0;box-shadow:none;border:1px solid var(--line)}
+  .kw-head h2,.str-head h2,.qs-l h2,.mth-r h2,.proc-l h2,.prj-l h2{font-size:34px}
+  .tst blockquote{font-size:30px}
+  .tst .arw{display:none}
+  .prj-grid{grid-template-columns:1fr}
+  .prj-ghost,.hero-word{font-size:26vw}
+  .proc-l{padding:40px 28px}
+  .foot-word{font-size:26vw}
+  .mth-imgwrap{clip-path:none}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;scroll-behavior:auto!important}
+  .rv,.clip{opacity:1!important;transform:none!important;clip-path:none!important;transition:none!important}
+}
+</style>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z" stroke="#fff" stroke-width="1.6"/><path d="M12 2v20M3 7l9 5 9-5" stroke="#fff" stroke-width="1.6"/></svg></span>
+      <b>RENIER</b>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#over">Over ons</a>
+      <a href="#oplossingen">Oplossingen</a>
+      <a href="#producten">Producten</a>
+      <a href="#projecten">Projecten</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn" href="#contact">Offerte aanvragen
+        <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2"/></svg></a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-in">
+    <div class="hero-lead">
+      <p>Specialist in Belgische blauwe hardsteen en Vinalmont maaskalksteen, ontgonnen uit onze eigen groeve.</p>
+      <a href="#oplossingen" class="scrolldot" aria-label="Ontdek meer">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16M6 14l6 6 6-6" stroke="currentColor" stroke-width="2"/></svg></a>
+    </div>
+    <div class="hero-h">
+      <div class="mm"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z" stroke="#9c6d3f" stroke-width="1.6"/><path d="M12 2v20M3 7l9 5 9-5" stroke="#9c6d3f" stroke-width="1.6"/></svg></div>
+      <h1>Uw betrouwbare partner<br>in Belgische<br>natuursteen</h1>
+    </div>
+  </div>
+  <div class="hero-idx"><span class="on">01</span><span>02</span><span>03</span></div>
+  <div class="hero-foot">
+    <div class="lbl"><span>Meer dan 100 jaar vakmanschap</span><span>Familiebedrijf</span></div>
+    <div class="hero-word">NATUURSTEEN</div>
+  </div>
+</section>
+
+<!-- KWALITEIT IN ELKE STAP (dark) -->
+<section class="dark kw" id="over">
+  <div class="wrap">
+    <div class="kw-head">
+      <span class="eyebrow ctr">Kwaliteit &amp; herkomst</span>
+      <h2 class="rv">Kwaliteitsvolle natuursteen waarop u kunt bouwen, in elke stap van het proces</h2>
+      <div class="kw-dot"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16M6 14l6 6 6-6" stroke="currentColor" stroke-width="2"/></svg></div>
+    </div>
+    <div class="kw-grid">
+      <div class="kw-cell rv"><div class="n">01</div><h3>Eigen ontginning</h3><p>Wij ontginnen onze Belgische blauwe hardsteen en Vinalmont maaskalksteen uit eigen groeves, met korte transportafstanden.</p></div>
+      <div class="kw-cell rv d1"><div class="n">02</div><h3>Vakkundige bewerking</h3><p>In eigen huis bewerken wij elke steen met meer dan honderd jaar ervaring in vakmanschap en innovatie.</p></div>
+      <div class="kw-cell rv d2"><div class="n">03</div><h3>Levering op maat</h3><p>Van standaardmaat tot maatwerk, met een geschatte levertijd van twee weken voor de meeste courante producten.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="strip">
+  <div class="c rv"><b>100+</b><span>Jaar vakmanschap</span></div>
+  <div class="c rv d1"><b>Eigen</b><span>Belgische groeves</span></div>
+  <div class="c hl rv d2"><b>65%</b><span>Eigen groene energie</span></div>
+  <div class="c rv d3"><b>Blauwe</b><span>Hardsteen &amp; maaskalksteen</span></div>
+  <div class="c rv d3"><b>CO2</b><span>Bewust geproduceerd</span></div>
+</section>
+
+<!-- STRENGTHS -->
+<section class="str">
+  <div class="wrap">
+    <div class="str-head">
+      <span class="eyebrow ctr">Onze sterktes</span>
+      <h2 class="rv">Belgische natuursteen met karakter, duurzaamheid en vakmanschap</h2>
+    </div>
+    <div class="str-grid">
+      <div class="str-cell rv">
+        <div class="str-ic"><svg viewBox="0 0 48 48" fill="none"><path d="M24 6 6 16v16l18 10 18-10V16L24 6Z" stroke="currentColor" stroke-width="2"/><path d="M6 16l18 10 18-10M24 26v16" stroke="currentColor" stroke-width="2"/></svg></div>
+        <h3>Eigen groeves</h3><p>Vanuit onze eigen groeves ontginnen, bewerken en leveren wij hoogwaardige Belgische natuursteen.</p>
+      </div>
+      <div class="str-cell rv d1">
+        <div class="str-ic"><svg viewBox="0 0 48 48" fill="none"><path d="M24 4c8 8 12 14 12 22a12 12 0 0 1-24 0c0-8 4-14 12-22Z" stroke="currentColor" stroke-width="2"/><path d="M24 20c3 3 4 5 4 8a4 4 0 0 1-8 0c0-3 1-5 4-8Z" stroke="currentColor" stroke-width="2"/></svg></div>
+        <h3>Duurzaam geproduceerd</h3><p>Wij produceren 65% van onze energiebehoefte met een van de grootste zonnepanelenparken van de regio.</p>
+      </div>
+      <div class="str-cell rv d2">
+        <div class="str-ic"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="18" r="12" stroke="currentColor" stroke-width="2"/><path d="M18 28 14 44l10-6 10 6-4-16" stroke="currentColor" stroke-width="2"/></svg></div>
+        <h3>Meer dan 100 jaar</h3><p>Een Belgisch familiebedrijf dat al meer dan honderd jaar werkt aan vakmanschap en klanttevredenheid.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUALITY STANDARDS / TOEPASSINGEN -->
+<section class="qs" id="oplossingen">
+  <div class="wrap">
+    <span class="eyebrow">Onze oplossingen</span>
+    <div class="qs-grid">
+      <div class="qs-l">
+        <h2 class="rv">Voor elke toepassing een aangepast aanbod in Belgische natuursteen</h2>
+        <div class="qs-imgwrap rv clip">
+          <img src="https://renier.be/wp-content/uploads/2025/09/Renier-keuken-burelen.webp" alt="Natuursteen in een modern interieur">
+          <div class="qs-badge">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4"/></svg></span>
+            <div><b>Eigen groeves</b><br><span>Belgische herkomst, gegarandeerd</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="qs-r">
+        <img class="rv clip d1" src="https://renier.be/wp-content/uploads/2026/06/IMG_4680-ingezoomd-2-1015x1536.jpg" alt="Belgische natuursteen toepassing">
+        <div class="acc">
+          <div class="it rv" data-acc>Ruwbouw<span class="ar"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></span></div>
+          <div class="it rv d1" data-acc>Interieur<span class="ar"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></span></div>
+          <div class="it on rv d2" data-acc>Renovatie<span class="ar"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2"/></svg></span></div>
+          <div class="it rv d3" data-acc>Tuin &amp; Terras<span class="ar"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPLORE + STATS -->
+<section class="exp">
+  <div class="wrap">
+    <a class="btn" href="#producten">Bekijk onze producten
+      <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2"/></svg></a>
+    <div class="stats">
+      <div class="s rv"><b data-count="100" data-suf="+">0</b><span>Jaar ervaring</span></div>
+      <div class="s rv d1"><b data-count="65" data-suf="%">0</b><span>Eigen groene energie</span></div>
+      <div class="s rv d2"><b data-count="2" data-suf=" wk">0</b><span>Gemiddelde levertijd</span></div>
+      <div class="s rv d3"><b data-count="6" data-suf="">0</b><span>Toepassingsdomeinen</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FULL BAND -->
+<section class="band">
+  <div class="band-pill">
+    <div class="tx"><b>Advies nodig?</b><span>Ons team helpt u graag bij de keuze van de juiste natuursteen.</span></div>
+    <a class="go" href="#contact" aria-label="Contact"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2"/></svg></a>
+  </div>
+</section>
+
+<!-- METHODS / PRODUCTEN -->
+<section class="mth" id="producten">
+  <div class="wrap">
+    <div class="mth-grid">
+      <div class="mth-imgwrap rv clip">
+        <img src="https://renier.be/wp-content/uploads/2025/09/Ruwbouw-1.webp" alt="Belgische blauwe hardsteen in de ruwbouw">
+        <div class="mth-badge">
+          <div class="r"><b>100+</b><strong>Jaar vakmanschap</strong></div>
+          <p>Van dorpels op maat tot volledige projecten in Belgische natuursteen.</p>
+        </div>
+      </div>
+      <div class="mth-r">
+        <span class="eyebrow">Ons aanbod</span>
+        <h2 class="rv">Belgische natuursteen voor elk project, van ruwbouw tot afwerking</h2>
+        <div class="mth-acc">
+          <div class="it on" data-macc>
+            <div class="top"><h3>Dorpels op maat</h3><span class="ar"><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2"/></svg></span></div>
+            <div class="bd"><p>Deur- en raamdorpels in Belgische blauwe hardsteen, in standaardmaten of volledig op maat voor architectenprojecten.</p></div>
+          </div>
+          <div class="it" data-macc>
+            <div class="top"><h3>Onderhoud &amp; reiniging</h3><span class="ar"><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2"/></svg></span></div>
+            <div class="bd"><p>Reinigings- en onderhoudsproducten om uw natuursteen jarenlang in topconditie te houden.</p></div>
+          </div>
+          <div class="it" data-macc>
+            <div class="top"><h3>Accessoires</h3><span class="ar"><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2"/></svg></span></div>
+            <div class="bd"><p>Van kaarshouders tot afwerkingsdetails, decoratieve accessoires in natuursteen voor binnen en buiten.</p></div>
+          </div>
+          <div class="it" data-macc>
+            <div class="top"><h3>Groothandel voor aannemers</h3><span class="ar"><svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2"/></svg></span></div>
+            <div class="bd"><p>Professionele klanten bestellen op factuur en genieten van levering rechtstreeks uit onze groeve.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS / BESTELLING -->
+<section class="proc">
+  <div class="wrap">
+    <div class="proc-grid">
+      <div class="proc-l">
+        <div class="mm"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v20M3 7l9 5 9-5" stroke="currentColor" stroke-width="1.6"/></svg></div>
+        <h2 class="rv">Zo verloopt uw bestelling, van oplossing tot levering</h2>
+        <div class="proc-tags">
+          <div class="tag t0 rv"><span class="tn">01.</span> Oplossingen, kies per toepassing</div>
+          <div class="tag t1 rv d1"><span class="tn">02.</span> Producten, stel uw bestelling samen</div>
+          <div class="tag t2 rv d2"><span class="tn">03.</span> Bestellen, transport meteen berekend</div>
+          <div class="tag t3 rv d3"><span class="tn">04.</span> Bevestiging, altijd persoonlijk contact</div>
+        </div>
+      </div>
+      <div class="proc-r rv clip">
+        <img src="https://renier.be/wp-content/uploads/2026/06/IMG_5200-1024x1536.jpg" alt="Belgische natuursteen op maat">
+        <div class="proc-badge">
+          <b>2 wk</b><strong>Geschatte levertijd</strong>
+          <p>Voor de meeste courante producten uit ons aanbod.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL / MISSIE -->
+<section class="tst">
+  <div class="wrap">
+    <img class="av rv" src="https://renier.be/wp-content/uploads/2024/06/Strivay-equarris-006-004.jpg" alt="Renier natuursteen">
+    <div class="who rv d1">Renier, Belgisch familiebedrijf sinds meer dan 100 jaar</div>
+    <blockquote class="rv d2">&ldquo; Wij werken al meer dan honderd jaar met onwrikbare toewijding aan vakmanschap, innovatie en klanttevredenheid, vanuit onze eigen Belgische groeves. &rdquo;</blockquote>
+    <div class="arw">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="1.6"/></svg>
+      <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="prj" id="projecten">
+  <div class="wrap">
+    <div class="prj-top">
+      <div class="prj-ghost">PROJECTEN</div>
+      <div class="prj-l">
+        <span class="eyebrow">Onze realisaties</span>
+        <h2 class="rv">Referenties in Belgische natuursteen die generaties meegaan</h2>
+        <p class="rv d1">Van moderne gevelbekleding tot tijdloze renovaties, ontdek waar onze natuursteen tot leven komt.</p>
+        <a class="btn dark rv d2" href="#contact">Bekijk projecten
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2"/></svg></a>
+      </div>
+    </div>
+    <div class="prj-grid">
+      <div class="prj-card rv"><img src="https://renier.be/wp-content/uploads/2026/05/Piedra-paloma-gevelbekleding-Seoulproject.jpg" alt="Gevelbekleding in witte natuursteen">
+        <div class="cap"><small>Gevelbekleding</small>Piedra Paloma project</div></div>
+      <div class="prj-card rv d1"><img src="https://renier.be/wp-content/uploads/2024/06/Strivay-equarris-006-004.jpg" alt="Woning in Belgische blauwe hardsteen">
+        <div class="cap"><small>Ruwbouw</small>Blauwe hardsteen woning</div></div>
+      <div class="prj-card rv d2"><img src="https://renier.be/wp-content/uploads/2025/09/Hotel-de-Clercx-2017-08-06-cour-fronton-LDef.webp" alt="Renovatieproject in natuursteen">
+        <div class="cap"><small>Renovatie</small>Hotel de Clercx</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="foot-bg"></div>
+  <div class="foot-in">
+    <div class="foot-top">
+      <div class="foot-cta">
+        <h2 class="rv">Klaar voor uw volgende project in Belgische natuursteen?</h2>
+        <a class="btn" href="tel:+3216550011">Vraag uw offerte aan
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2"/></svg></a>
+      </div>
+      <div class="foot-col">
+        <h4>Snel naar</h4>
+        <a href="#over">Over ons</a>
+        <a href="#oplossingen">Klantenservice</a>
+        <a href="#producten">Kenniscentrum</a>
+        <a href="#producten">Webshop</a>
+        <a href="#producten">Webshop Pro</a>
+      </div>
+      <div class="foot-col">
+        <h4>Sociale media</h4>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/renier_natuursteen" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="foot-mid">
+      <div>
+        <div class="pin"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-6.5 8-13a8 8 0 0 0-16 0c0 6.5 8 13 8 13Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="3" stroke="currentColor" stroke-width="1.8"/></svg></div>
+        <p>Nijverheidslaan 1<br>3200 Aarschot, België</p>
+      </div>
+      <div><b>Telefoon</b><p style="margin-top:12px">+32 16 550011</p></div>
+      <div><b>E-mail</b><p style="margin-top:12px">[te bevestigen]</p></div>
+    </div>
+    <div class="foot-word">RENIER</div>
+  </div>
+  <div class="foot-legal">
+    <div class="in">
+      <span>Renier, Belgische natuursteen uit eigen groeve</span>
+      <span>Ontwerp in de stijl van het Kontrek template &nbsp;/&nbsp; <a href="https://renier.be/">renier.be</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// mobile menu
+var burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.addEventListener('click',function(){menu.classList.toggle('open');});
+menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open');});});
+
+// reveal
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.16,rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.rv,.clip').forEach(function(el){io.observe(el);});
+
+// counters
+var cio=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(!e.isIntersecting)return; cio.unobserve(e.target);
+  var el=e.target,end=+el.dataset.count,suf=el.dataset.suf||'',t=0,dur=1300,st=null;
+  function step(ts){if(!st)st=ts;var p=Math.min((ts-st)/dur,1);el.textContent=Math.round(p*end)+suf;if(p<1)requestAnimationFrame(step);}
+  requestAnimationFrame(step);
+});},{threshold:.6});
+document.querySelectorAll('[data-count]').forEach(function(el){cio.observe(el);});
+
+// toepassingen accordion (single active)
+document.querySelectorAll('[data-acc]').forEach(function(it){
+  it.addEventListener('click',function(){
+    document.querySelectorAll('[data-acc]').forEach(function(x){
+      x.classList.remove('on');
+      x.querySelector('.ar').innerHTML='<svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg>';
+    });
+    it.classList.add('on');
+    it.querySelector('.ar').innerHTML='<svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="2"/></svg>';
+  });
+});
+// producten accordion
+document.querySelectorAll('[data-macc] .top').forEach(function(t){
+  t.addEventListener('click',function(){
+    var it=t.parentElement,open=it.classList.contains('on');
+    document.querySelectorAll('[data-macc]').forEach(function(x){x.classList.remove('on');});
+    if(!open)it.classList.add('on');
+  });
+});
+</script>
